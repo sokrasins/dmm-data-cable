@@ -2239,13 +2239,14 @@
 				)
 			)
 		)
-		(symbol "Sensor_Optical:SFH3201"
-			(pin_names hide)
+		(symbol "Sensor_Optical:BPW40"
+			(pin_names
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 2.54 1.27 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2253,8 +2254,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SFH3201"
-				(at 2.54 -1.27 0)
+			(property "Value" "BPW40"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2262,8 +2263,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "OptoDevice:Osram_SFH9x0x"
-				(at 0 -7.62 0)
+			(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
+				(at 12.192 -3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2271,16 +2272,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://dammedia.osram.info/media/resource/hires/osram-dam-2495980/SFH%203201.pdf"
-				(at -2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Silicon NPN phototransistor, SMD-6"
+			(property "Datasheet" "https://www.rcscomponents.kiev.ua/datasheets/bpw40.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2289,7 +2281,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN phototransistor"
+			(property "Description" "Phototransistor NPN"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2298,7 +2290,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Osram*SFH9x0x*"
+			(property "ki_keywords" "npn phototransistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2307,21 +2299,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "SFH3201_0_1"
-				(circle
-					(center -1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
+			(property "ki_fp_filters" "LED*D5.0mm*Clear*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
+			)
+			(symbol "BPW40_0_1"
 				(polyline
 					(pts
-						(xy -4.445 1.27) (xy -5.08 1.27)
+						(xy -1.905 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2333,7 +2323,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 2.54) (xy -4.445 2.54)
+						(xy -1.27 2.54) (xy -1.905 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2345,7 +2335,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy 0 2.54)
+						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2357,7 +2347,7 @@
 				)
 				(polyline
 					(pts
-						(xy -6.35 3.175) (xy -4.445 1.27) (xy -4.445 1.905)
+						(xy -3.81 3.175) (xy -1.905 1.27) (xy -1.905 1.905)
 					)
 					(stroke
 						(width 0)
@@ -2369,7 +2359,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.715 4.445) (xy -3.81 2.54) (xy -3.81 3.175)
+						(xy -3.175 4.445) (xy -1.27 2.54) (xy -1.27 3.175)
 					)
 					(stroke
 						(width 0)
@@ -2381,7 +2371,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -0.635) (xy 0 -2.54) (xy 0 -2.54)
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -2393,7 +2383,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 1.905) (xy -1.905 -1.905) (xy -1.905 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
@@ -2405,7 +2395,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.778) (xy -0.762 -1.27) (xy -0.254 -2.286) (xy -1.27 -1.778) (xy -1.27 -1.778)
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -2415,28 +2405,21 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "SFH3201_1_1"
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
+			)
+			(symbol "BPW40_1_1"
 				(pin passive line
-					(at 0 5.08 270)
+					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "C"
 						(effects
@@ -2445,7 +2428,25 @@
 							)
 						)
 					)
-					(number "4"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2847,6 +2848,12 @@
 		(uuid "d0171f6d-df45-4939-b75b-77aeca8af50a")
 	)
 	(junction
+		(at 106.68 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaa8a6d9-47c1-439f-bb75-caadd5094aa7")
+	)
+	(junction
 		(at 54.61 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2893,16 +2900,6 @@
 			(type default)
 		)
 		(uuid "03193731-52d3-4c7a-9071-975b086d03b4")
-	)
-	(wire
-		(pts
-			(xy 191.77 82.55) (xy 191.77 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "058df933-1b9e-4138-accd-78a6f79d4b4b")
 	)
 	(wire
 		(pts
@@ -3176,6 +3173,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 102.87) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c4c0d5-52cd-4b77-b6a9-2904c882e47a")
+	)
+	(wire
+		(pts
 			(xy 187.96 111.76) (xy 201.93 111.76)
 		)
 		(stroke
@@ -3193,6 +3200,16 @@
 			(type default)
 		)
 		(uuid "6ceff842-8f97-49a5-92df-ba3b83c81163")
+	)
+	(wire
+		(pts
+			(xy 119.38 93.98) (xy 119.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d9f39e9-765a-419f-be65-52e4ad5734d8")
 	)
 	(wire
 		(pts
@@ -3433,6 +3450,16 @@
 			(type default)
 		)
 		(uuid "adfefe96-86ae-4cc4-aabe-3b3b44aa512c")
+	)
+	(wire
+		(pts
+			(xy 191.77 85.09) (xy 191.77 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af4bdfdb-60a7-4b29-807d-b5c8f3ca0e18")
 	)
 	(wire
 		(pts
@@ -3706,6 +3733,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 93.98) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbadd9c9-b99a-4808-8267-2c39301045a6")
+	)
+	(wire
+		(pts
 			(xy 52.07 43.18) (xy 54.61 43.18)
 		)
 		(stroke
@@ -3726,7 +3763,6 @@
 	)
 	(label "RXD"
 		(at 63.5 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3737,7 +3773,6 @@
 	)
 	(label "D+"
 		(at 59.69 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3748,7 +3783,6 @@
 	)
 	(label "D-"
 		(at 59.69 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3759,7 +3793,6 @@
 	)
 	(label "D-"
 		(at 119.38 118.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3770,7 +3803,6 @@
 	)
 	(label "RXD"
 		(at 228.6 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3781,7 +3813,6 @@
 	)
 	(label "TXD"
 		(at 194.31 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3792,7 +3823,6 @@
 	)
 	(label "TXD"
 		(at 63.5 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3803,7 +3833,6 @@
 	)
 	(label "D+"
 		(at 119.38 123.19 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3838,7 +3867,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 209.55 109.22 0)
 			(effects
 				(font
@@ -3990,7 +4019,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 209.55 85.09 0)
 			(effects
 				(font
@@ -4018,28 +4047,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "0362ebd6-a6df-4af7-84bf-65efc2519ab2")
+			(uuid "0362ebd6-a6df-4af7-84bf-65efc2519ab3")
 		)
 		(pin "2"
-			(uuid "e2786679-7cee-412a-b5c8-c7b9673249a6")
+			(uuid "e2786679-7cee-412a-b5c8-c7b9673249a7")
 		)
 		(pin "3"
-			(uuid "2a852a39-1ce7-46e5-a888-94520fd11a09")
+			(uuid "2a852a39-1ce7-46e5-a888-94520fd11a0a")
 		)
 		(pin "8"
-			(uuid "1c266661-f0ad-43f5-836f-75689187b74b")
+			(uuid "1c266661-f0ad-43f5-836f-75689187b74c")
 		)
 		(pin "5"
-			(uuid "bc29ba34-5f2c-42bb-a05e-1e4e59e474fd")
+			(uuid "bc29ba34-5f2c-42bb-a05e-1e4e59e474fe")
 		)
 		(pin "6"
-			(uuid "86ba9b38-e8ff-4b35-8773-fd4523f1ec92")
+			(uuid "86ba9b38-e8ff-4b35-8773-fd4523f1ec93")
 		)
 		(pin "7"
-			(uuid "f50e7587-b04e-4f13-ba4c-9ffc96d1e851")
+			(uuid "f50e7587-b04e-4f13-ba4c-9ffc96d1e852")
 		)
 		(pin "1"
-			(uuid "8a303e52-d1ea-408a-a90e-6b3f99bdf4ae")
+			(uuid "8a303e52-d1ea-408a-a90e-6b3f99bdf4af")
 		)
 		(instances
 			(project ""
@@ -4078,7 +4107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 210.82 41.91 0)
 			(effects
 				(font
@@ -4106,28 +4135,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "0362ebd6-a6df-4af7-84bf-65efc2519ab2")
+			(uuid "0362ebd6-a6df-4af7-84bf-65efc2519ab4")
 		)
 		(pin "2"
-			(uuid "e2786679-7cee-412a-b5c8-c7b9673249a6")
+			(uuid "e2786679-7cee-412a-b5c8-c7b9673249a8")
 		)
 		(pin "3"
-			(uuid "2a852a39-1ce7-46e5-a888-94520fd11a09")
+			(uuid "2a852a39-1ce7-46e5-a888-94520fd11a0b")
 		)
 		(pin "8"
-			(uuid "1c266661-f0ad-43f5-836f-75689187b74b")
+			(uuid "1c266661-f0ad-43f5-836f-75689187b74d")
 		)
 		(pin "5"
-			(uuid "bc29ba34-5f2c-42bb-a05e-1e4e59e474fd")
+			(uuid "bc29ba34-5f2c-42bb-a05e-1e4e59e474ff")
 		)
 		(pin "6"
-			(uuid "86ba9b38-e8ff-4b35-8773-fd4523f1ec92")
+			(uuid "86ba9b38-e8ff-4b35-8773-fd4523f1ec94")
 		)
 		(pin "7"
-			(uuid "f50e7587-b04e-4f13-ba4c-9ffc96d1e851")
+			(uuid "f50e7587-b04e-4f13-ba4c-9ffc96d1e853")
 		)
 		(pin "1"
-			(uuid "8a303e52-d1ea-408a-a90e-6b3f99bdf4ae")
+			(uuid "8a303e52-d1ea-408a-a90e-6b3f99bdf4b0")
 		)
 		(instances
 			(project ""
@@ -4917,22 +4946,22 @@
 		(fields_autoplaced yes)
 		(uuid "55311e88-cdf7-495e-bff4-f0c2830ac329")
 		(property "Reference" "D1"
-			(at 227.457 115.57 0)
+			(at 227.457 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "IR204A"
-			(at 227.457 113.03 0)
+		(property "Value" "TSAL6400"
+			(at 227.457 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 228.6 104.775 0)
 			(effects
 				(font
@@ -5000,7 +5029,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 40.64 43.18 0)
 			(effects
 				(font
@@ -5088,6 +5117,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Optical:BPW40")
+		(at 176.53 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64294e0a-c044-4df4-acc1-bd11e4cba45e")
+		(property "Reference" "Q2"
+			(at 181.61 72.9106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INL-5ANPT30"
+			(at 181.61 75.4506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
+			(at 188.722 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.rcscomponents.kiev.ua/datasheets/bpw40.pdf"
+			(at 176.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Phototransistor NPN"
+			(at 176.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39526615-039c-481b-89ce-021565a709ac")
+		)
+		(pin "2"
+			(uuid "411ff147-1a10-46df-9e4e-b1b3850fb800")
+		)
+		(instances
+			(project ""
+				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 80.01 41.91 0)
 		(unit 1)
@@ -5148,6 +5247,71 @@
 			(project "fluke-ir-cable"
 				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 119.38 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c20e3fd-b15e-44ae-837d-22467b3f461a")
+		(property "Reference" "#PWR023"
+			(at 119.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.952 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84ec7f5e-5e9a-48c5-a779-4a0891bb79d7")
+		)
+		(instances
+			(project "fluke-ir-cable"
+				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5284,6 +5448,76 @@
 			(project ""
 				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74a7ff34-b05d-4c3d-abd7-2921a08a44b5")
+		(property "Reference" "C4"
+			(at 123.19 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 123.19 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 120.3452 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32bb91a6-8855-42ed-a356-908c9ac5d4b1")
+		)
+		(pin "2"
+			(uuid "13e6fcd3-f2fb-4439-a7e8-82391a6cb226")
+		)
+		(instances
+			(project "fluke-ir-cable"
+				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -5494,78 +5728,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Optical:SFH3201")
-		(at 179.07 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "950d8753-babf-4ad9-bd52-1d5c9bafd7b5")
-		(property "Reference" "Q1"
-			(at 181.61 72.9106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SFH3201"
-			(at 181.61 75.4506 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "OptoDevice:Osram_SFH9x0x"
-			(at 179.07 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dammedia.osram.info/media/resource/hires/osram-dam-2495980/SFH%203201.pdf"
-			(at 176.53 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Silicon NPN phototransistor, SMD-6"
-			(at 179.07 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1a5d476c-a98c-4354-b2db-ca40f7058d12")
-		)
-		(pin "4"
-			(uuid "e6236612-e5e8-4137-b02b-626e1cd6f7c8")
-		)
-		(instances
-			(project ""
-				(path "/f281ec51-5a1b-4e08-bfb3-895a3d188f80"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+2V5")
-		(at 191.77 82.55 0)
+		(at 191.77 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5574,7 +5738,7 @@
 		(fields_autoplaced yes)
 		(uuid "98fad3d9-032e-4762-a55b-4d54f2ba86e6")
 		(property "Reference" "#PWR014"
-			(at 191.77 86.36 0)
+			(at 191.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5583,7 +5747,7 @@
 			)
 		)
 		(property "Value" "+2V5"
-			(at 191.77 77.47 0)
+			(at 191.77 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 82.55 0)
+			(at 191.77 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 82.55 0)
+			(at 191.77 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,7 +5773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 191.77 82.55 0)
+			(at 191.77 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
